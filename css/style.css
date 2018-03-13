@@ -1,0 +1,16 @@
+*{
+  border: 1px dotted black;
+  background-color: green;
+}
+header {
+  font-family: 'Rammetto One', cursive;
+  width: 100%;
+  background-color: blue;
+  font-size: 55px;
+  text-align: center;
+}
+#salmonLogo {
+  align-content: center;
+  border: 3px dotted white;
+  width: 100%;
+}
