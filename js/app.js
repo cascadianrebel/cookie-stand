@@ -6,9 +6,11 @@ var storePike = {
   maxCustPerHour: 65,
   minCustPerHour: 23,
   avgCookiePerSale: 6.3,
+  // totalCookies: 0,
   avgCookBoughtPerHour: function() {
-    let randNumCustomersPerHour = Math.floor(Math.random() * this.maxCustPerHour - this.minCustPerHour) + this.minCustPerHour;
-    let avgSalePerHour = Math.floor(randNumCustomersPerHour * this.avgCookiePerSale);
+    var randNumCustomersPerHour = Math.floor(Math.random() * this.maxCustPerHour - this.minCustPerHour) + this.minCustPerHour;
+    var avgSalePerHour = Math.floor(randNumCustomersPerHour * this.avgCookiePerSale);
+    this.totalCookies = this.totalCookies + this.avgSalePerHour;
     return avgSalePerHour;
   },
   populateHourlyTotals: function() {
@@ -20,6 +22,9 @@ var storePike = {
       liEl.textContent = this.hourlyTotals[i];
       avgContainer.appendChild(liEl);
     }
+    // var totalsLiEl = document.createElement('li');
+    // this.avgContainer.push(totalsLiEl);
+    // totalsLiEl.textContent = 'Totals : ' + this.totalCookies;   
   },
 };
 
@@ -34,7 +39,7 @@ var storeSeaTac = {
   avgCookiePerSale: 1.2,
   avgCookBoughtPerHour: function() {
     var randNumCustomersPerHour = Math.floor(Math.random() * this.maxCustPerHour - this.minCustPerHour) + this.minCustPerHour;
-    let avgSalePerHour = Math.floor(randNumCustomersPerHour * this.avgCookiePerSale);
+    var avgSalePerHour = Math.floor(randNumCustomersPerHour * this.avgCookiePerSale);
     return avgSalePerHour;
   },
   populateHourlyTotals: function() {
@@ -59,7 +64,7 @@ var storeSeattleCenter = {
   avgCookiePerSale: 3.7,
   avgCookBoughtPerHour: function() {
     var randNumCustomersPerHour = Math.floor(Math.random() * this.maxCustPerHour - this.minCustPerHour) + this.minCustPerHour;
-    let avgSalePerHour = Math.floor(randNumCustomersPerHour * this.avgCookiePerSale);
+    var avgSalePerHour = Math.floor(randNumCustomersPerHour * this.avgCookiePerSale);
     return avgSalePerHour;
   },
   populateHourlyTotals: function() {
@@ -83,7 +88,7 @@ var storeCapHill = {
   avgCookiePerSale: 2.3,
   avgCookBoughtPerHour: function() {
     var randNumCustomersPerHour = Math.floor(Math.random() * this.maxCustPerHour - this.minCustPerHour) + this.minCustPerHour;
-    let avgSalePerHour = Math.floor(randNumCustomersPerHour * this.avgCookiePerSale);
+    var avgSalePerHour = Math.floor(randNumCustomersPerHour * this.avgCookiePerSale);
     return avgSalePerHour;
   },
   populateHourlyTotals: function() {
@@ -108,7 +113,7 @@ var storeAlki = {
   avgCookiePerSale: 4.6,
   avgCookBoughtPerHour: function() {
     var randNumCustomersPerHour = Math.floor(Math.random() * this.maxCustPerHour - this.minCustPerHour) + this.minCustPerHour;
-    let avgSalePerHour = Math.floor(randNumCustomersPerHour * this.avgCookiePerSale);
+    var avgSalePerHour = Math.floor(randNumCustomersPerHour * this.avgCookiePerSale);
     return avgSalePerHour;
   },
   populateHourlyTotals: function() {
