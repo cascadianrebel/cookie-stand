@@ -30,13 +30,24 @@ section {
   text-align: left;
   padding: 7px;
 }
+#salesPage {
+  background-color: salmon;
+}
 #tableH {
   background-color: white;
   text-align: center;
   width: 450px;
   border: 2px solid black;
+  margin-left: 20%;
 }
-th, td {
+#tableCookieSales {
+  margin-left: 20%;
+}
+th{
+  border: 2pt dashed black;
+  background-color: bisque;
+}
+td {
   border: 2pt solid black;
   padding: 5px;
   text-align: left;

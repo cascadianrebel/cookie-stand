@@ -28,12 +28,14 @@ var cookiesTable = document.getElementById('tableCookieSales');
 StoreName.prototype.render = function() {
   //create tr
   var trElement = document.createElement('tr');
+  //create th
+  var thElement = document.createElement('th');
   //create td
   var tdElement = document.createElement('td');
   //create cell content
-  tdElement.textContent = this.storeLocation;
+  thElement.textContent = this.storeLocation;
   //append cell to row
-  trElement.appendChild(tdElement);
+  trElement.appendChild(thElement);
   //create for loop to capture each hour
   for (var i = 0; i < storeHours.length; i++) {
   //create cell
@@ -44,9 +46,9 @@ StoreName.prototype.render = function() {
     trElement.appendChild(tdElement);
     //append rows to table
   }
-  tdElement = document.createElement('td');
-  tdElement.textContent = this.totalCookies;
-  trElement.appendChild(tdElement);
+  thElement = document.createElement('th');
+  thElement.textContent = this.totalCookies;
+  trElement.appendChild(thElement);
 
   cookiesTable.appendChild(trElement);
 };
@@ -54,19 +56,19 @@ StoreName.prototype.render = function() {
 storeHours.render = function() {
   var trElement = document.createElement('tr');
   var tdElement = document.createElement('td');
-  trElement.appendChild(tdElement);
+  var thElement = document.createElement('th');
   //add 'location' to table header
-  tdElement.textContent = 'Location';
-  trElement.appendChild(tdElement);
+  thElement.textContent = 'Location';
+  trElement.appendChild(thElement);
   //create for loop to capture each hour
   for (var i = 0; i < storeHours.length; i++) {
     tdElement = document.createElement('td');
     tdElement.textContent = storeHours[i];
     trElement.appendChild(tdElement);
   }
-  tdElement = document.createElement('td');
-  tdElement.textContent = 'Totals';
-  trElement.appendChild(tdElement);
+  thElement = document.createElement('th');
+  thElement.textContent = 'Totals';
+  trElement.appendChild(thElement);
 
   cookiesTable.appendChild(trElement);
 };
