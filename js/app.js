@@ -14,14 +14,13 @@ function StoreName (storeLocation, maxCustomersPerHour, minCustomersPerHour, avg
 }
 
 StoreName.prototype.salesPerHour = function() {
-  var totalCookies = 0;
+  // var totalCookies = 0;
   for (var i = 0; i < storeHours.length; i++) {
-    var randNumCustomersPerHour = Math.floor(Math.random() * (this.maxCustomersPerHour - this.minCustomersPerHour)) + this.minCustomersPerHour;
-    var cookiesSoldPerHour = randNumCustomersPerHour * Math.floor(this.avgCookiesPerSale);
-    this.totalCookies += cookiesSoldPerHour;
+    var randNumCustomersPerHour = Math.random() * (this.maxCustomersPerHour - this.minCustomersPerHour) + this.minCustomersPerHour;
+    var cookiesSoldPerHour = Math.floor(randNumCustomersPerHour * this.avgCookiesPerSale);
     this.hourlySales.push(cookiesSoldPerHour);
+    this.totalCookies += cookiesSoldPerHour;
   }
-  this.totalCookies = totalCookies;
 };
 
 var cookiesTable = document.getElementById('tableCookieSales');
@@ -52,6 +51,27 @@ StoreName.prototype.render = function() {
   cookiesTable.appendChild(trElement);
 };
 
+storeHours.render = function() {
+  var trElement = document.createElement('tr');
+  var tdElement = document.createElement('td');
+  trElement.appendChild(tdElement);
+  //add 'location' to table header
+  tdElement.textContent = 'Location';
+  trElement.appendChild(tdElement);
+  //create for loop to capture each hour
+  for (var i = 0; i < storeHours.length; i++) {
+    tdElement = document.createElement('td');
+    tdElement.textContent = storeHours[i];
+    trElement.appendChild(tdElement);
+  }
+  tdElement = document.createElement('td');
+  tdElement.textContent = 'Totals';
+  trElement.appendChild(tdElement);
+
+  cookiesTable.appendChild(trElement);
+};
+storeHours.render();
+
 var pikeStore = new StoreName ('First and Pike', 65, 23, 6.3);
 pikeStore.salesPerHour();
 pikeStore.render();
@@ -66,8 +86,9 @@ seattleCenterStore.render();
 
 var capHillStore = new StoreName ('Capitol Hill', 38, 20, 2.3);
 capHillStore.salesPerHour();
-seattleCenterStore.render();
+capHillStore.render();
 
 var alkiStore = new StoreName('Alki', 16, 2, 4.6);
 alkiStore.salesPerHour();
 alkiStore.render();
+

@@ -14,3 +14,16 @@ header {
   border: 3px dotted white;
   width: 100%;
 }
+#tableH {
+  background-color: white;
+  text-align: center;
+}
+th, td {
+  border: 2pt solid black;
+  padding: 5px;
+  text-align: left;
+  background-color: white;
+}
+tr.even {
+  background-color: bisque;
+}
