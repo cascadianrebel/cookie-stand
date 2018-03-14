@@ -1,0 +1,34 @@
+*{
+  border: 1px dotted black;
+  background-color: salmon;
+}
+header {
+  font-family: 'Rammetto One', cursive;
+  width: 100%;
+  background-color: bisque;
+  font-size: 55px;
+  text-align: center;
+}
+#salmonLogo {
+  margin-left: 15%;
+  border: 3px dotted white;
+  width: 70%;
+}
+body {
+  align-content: center;
+}
+#tableH {
+  background-color: white;
+  text-align: center;
+  width: 450px;
+  border: 2px solid black;
+}
+th, td {
+  border: 2pt solid black;
+  padding: 5px;
+  text-align: left;
+  background-color: white;
+}
+tr.even {
+  background-color: bisque;
+}
