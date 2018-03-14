@@ -92,3 +92,23 @@ var alkiStore = new StoreName('Alki', 16, 2, 4.6);
 alkiStore.salesPerHour();
 alkiStore.render();
 
+// totalCookies.render = function() {
+//   var trElement = document.createElement('tr');
+//   var tdElement = document.createElement('td');
+//   trElement.appendChild(tdElement);
+//   //add 'location' to table header
+//   tdElement.textContent = 'Totals';
+//   trElement.appendChild(tdElement);
+//   //create for loop to capture each hour
+//   for (var i = 0; i < storeHours.length; i++) {
+//     for( var k = 0; k < StoreName.length; k++){
+//       tdElement = document.createElement('td');
+//       tdElement.textContent = this.totalCookies;
+//       trElement.appendChild(tdElement);
+//     }
+//   }
+//   trElement.appendChild(tdElement);
+
+//   cookiesTable.appendChild(trElement);
+// };
+// totalCookies.render();
