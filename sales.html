@@ -8,12 +8,33 @@
 
     <body>
 
-        <main> 
 
-            <h2 id='tableH'>Cookie Sales per location</h2>
-            <table id='tableCookieSales'></table>
 
-        </main>
+        <h2 id='tableH'>Cookie Sales per location</h2>
+        <table id='tableCookieSales'></table>
+
+        <form id= "storeForm">
+                <fieldset>
+                  <legend>Add A New Store Location</legend>
+          
+                  <label for="storeLocal">Location:</label>
+                  <input type="text" name ="storeLocal">
+          
+                  <label for="maxCustomers">Maximum Customers/hr:</label>
+                  <input type="text" name="maxCustomers">
+          
+                  <label for="minCustomers">Minimum Customers/hr:</label>
+                  <input type="text" name ="minCustomers">
+          
+                  <label for="avgCookies">Avg amount of Cookies/sale:</label>
+                  <input type="text" name ="avgCookies">
+          
+                  <button>Add Store Location</button>
+          
+                </fieldset>
+              </form>
+
+       
         <script src="js/app.js"></script>
 
     </body>
