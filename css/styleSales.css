@@ -1,0 +1,44 @@
+#charts{
+  background-color: gray;
+}
+
+#tableH{
+    background-color: white;
+    text-align: center;
+    width: 500px;
+    border: 2px solid black;
+    margin-left: 20%;
+}
+
+ul {
+  list-style: none;
+}
+form {
+ border: none;
+ float: left;
+ text-align: right;
+ background-color: white;
+}
+table {
+  background: #fff;
+  border-spacing: 0;
+  
+}
+table tr:first-child {
+  background: salmon;
+}
+table tr:nth-child(even) {
+  background: #ddd;
+}
+table tr:last-child {
+  background: salmon;
+}
+table td {
+  padding:  .5em;
+  border-bottom: 1px solid black;
+  border-right: .1em solid black;
+}
+th {
+  border: 2px solid black;
+}
+

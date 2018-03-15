@@ -3,38 +3,40 @@
     <head>
         <title>Salmon Cookie Sales</title>
         <link href="css/reset.css" rel="reset stylesheet"/>
-        <link href="css/style.css" rel="stylesheet"/>
+        <link href="css/styleSales.css" rel="stylesheet"/>
     </head>
 
-    <body>
+    <body id = charts>
+        <section>
+          <div id=table>
+            <h2 id='tableH'>Cookie Sales per location</h2>
+            <table id='tableCookieSales'></table>
+          </div>
+          
+          <div>
+            <form id= "storeForm">
+                    <fieldset>
+                      <legend>Add A New Store Location</legend>
+                     <ul>
+                      <li><label for="storeLocal">Location:</label>
+                      <input type="text" name ="storeLocal">
+                       </li>
 
+                      <li><label for="maxCustomers">Maximum Customers/hr:</label>
+                        <input type="text" name="maxCustomers"></li>
 
+                      <li><label for="minCustomers">Minimum Customers/hr:</label>
+                        <input type="text" name ="minCustomers"></li>
 
-        <h2 id='tableH'>Cookie Sales per location</h2>
-        <table id='tableCookieSales'></table>
+                      <li><label for="avgCookies">Avg amount of Cookies/sale:</label>
+                        <input type="text" name ="avgCookies"></li>
 
-        <form id= "storeForm">
-                <fieldset>
-                  <legend>Add A New Store Location</legend>
-          
-                  <label for="storeLocal">Location:</label>
-                  <input type="text" name ="storeLocal">
-          
-                  <label for="maxCustomers">Maximum Customers/hr:</label>
-                  <input type="text" name="maxCustomers">
-          
-                  <label for="minCustomers">Minimum Customers/hr:</label>
-                  <input type="text" name ="minCustomers">
-          
-                  <label for="avgCookies">Avg amount of Cookies/sale:</label>
-                  <input type="text" name ="avgCookies">
-          
-                  <button>Add Store Location</button>
-          
-                </fieldset>
-              </form>
-
-       
+                       <li><button>Add Store Location</button></li>
+                     </ul> 
+                    </fieldset>
+                  </form>
+              </div>
+          </section>
         <script src="js/app.js"></script>
 
     </body>
