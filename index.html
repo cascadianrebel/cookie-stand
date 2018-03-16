@@ -1,46 +1,82 @@
-<!DOCTYPE html>
-<!-- Besides using the picture of the fish... you should use...
-
-A custom Google font for highlights
-A specified standard san-serif web font for data (such as Arial, Verdana, or Helvetica)
-A specified standard serif web font for text (such as Georgia, Times, etc.)
-Specified different font colors for all three font usages
-A background color for the default page background (make sure font colors have good contrast and are readable on this background)
-A different background color for elements such boxes and tables (so make sure the font colors contrast against this well, too!)
-Anything else you'd like to add related to style. But remember: simplicity, clarity, and consistency are good things in design.
-Be thoughtful about layout and overall organization of the page.
-Include all of the typical stuff that you'll find on the home page of a business: locations, hours, contact information, some text about how awesome the business is, etc. Be creative, and again, think about what is meaningful to a typical end user. -->
-
+<!Doctype HTML>
 <html lang="en">
 <head>
+  <!-- I dont know what this meta stuff is doing, I didn't add it-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Salmon Cookies</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Rammetto+One" rel="stylesheet">
 </head>
 <body>
-  <header>Salmon Cookies</header>
-  <img id='salmonLogo' src="img/salmon.png" alt="Salmon Cookies logo">
-  <div id='hours'>
-    <h2>Hours of Operations</h2>
-    <p>Open daily from 6am - 8pm</p>
-  </div>
-  <div>
-    <h2>Locations</h2>
+
+  <header>Pat's Salmon Cookies</header>
+  <img id='salmonLogo1' src="img/salmon.png" alt="Salmon Cookies logo">
+
+  <Section id = 'topBar'>
     <ul>
-      <li>1st and Pike</li>
-      <li>SeaTac Aiport</li>
-      <li>Seatte Center</li>
-      <li>Capitol Hill</li>
-      <li>Alki </li>
-    </ul>
-  </div>
-  <section>
-    <h2>About Us</h2>
-    <p>We make cookies out of fish.</p>
+    <li class = "topBar">
+      <h2>Hours of Operations</h2>
+      <p>Open daily from 6am - 8pm</p>
+    </li>
+    <li class = "topBar">
+      <h2>Locations</h2>
+      <ul>
+        <li class = "location">1st and Pike</li>
+        <li class = "location" >SeaTac Aiport</li>
+        <li class = "location" >Seatte Center</li>
+        <li class = "location" >Capitol Hill</li>
+        <li class = "location" >Alki </li>
+        
+      </ul>
+    </li>
+    <li class= "topBar">
+      <h2>Contact Us</h2>
+      <p> 401.867.5309<br> 
+      1483 Alaskan Way, Seattle, WA 98101
+      <br>
+        @SolmanSalmonSweets
+      </p>
+    </li>
+      </ul>
+  </section>
+
+  <section class = "deck">
+    <div id = "ourStory">
+      <h2 id = "ourStoryHeader">Our Story</h2>
+      <figure>
+          <img src="img/family.jpg" alt= "The Solman-Parr Family"/>
+          <figcaption>from left: Tom Parr,34, Pat Solman-Parr,32, Fry Soloman-Parr,10, Roe Solman-Parr, 8 </figcaption>
+      </figure>
+
+
+      <p>When Pat Solman graduated from college, she set out to become the worlds best limnic endocrinologist. She had  dreams of finding a way to allow for her favorite animal, the Coho salmon, to live for years after spawning. She was close to restoring her favorite Coho's hormone levels  until one fateful October when her research camp was ransacked by a cascadian sasquatched, named Morris. Morris is a jerk.  
+        
+        <img class= "inLinePic" src="img/frosted-cookie.jpg"  alt="A frosted Salmon cookie">
+        
+       Morris destroyed all of Pat's research. Her beakers were shattered, her salmon specimen were ripped appart, and even her food supply was targetted.  When Pat submitted her report to National Park Service, the junior forester, Tom Parr, took a special interest. He couldn't recover any of her research but he was able to recover some bits and peices of her Salmon specimen and food supply. <img class= "inLinePic" src="cutter.jpg" alt="a salmon cookie cutter">
+        Sarcastically, Pat replied "What am I going to do with this? Bake cookies?" She was so driven by her sarcasm that she actually ended up making cookies. Tom loved them and shared the sarcasticookies with the other foresters. 
+        Pat's Salmon Cookies were loved by the mountain men and women and were requested over an over until Pat gave up on her dream of being the world's best limnin endocrinologist in favor of opening up her first cookie store.
+        Pat and Tom were married less than a year later and the cookies warranted 4 additional Salmon cookie stores. They now employ their children as free labor. 
+      </p>
+    </div>
+    <div id= "merchandise">
+        <h2 id= merchandiseHeader>
+          Merchandise</h2>
+        <figure>
+            <img src="img/shirt.jpg" alt="Pat's Salmon Cookie shirt"/>
+            <figcaption>scratch'n sniff salmon shirt $19.95 +s&h</figcaption>
+        </figure>
+             <figure> <img class= "inLinePic" src="img/fish.jpg" alt="fish"><figcaption>double-sided, razor-sharp souvenir cookie cutter $55.55</figcaption></figure>
+    </div>
+  </section>
+  <section class = "bottomBar">
+    <header>Join the team</header>
+    <figure>
+      <img src="img/chinook.jpg" alt="a Chinook Salmon">
+    </figure>
   </section>
 </body>
 </html>

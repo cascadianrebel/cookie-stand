@@ -27,7 +27,6 @@ StoreName.prototype.salesPerHour = function() {
   }
 };
 
-
 StoreName.prototype.render = function() {
   var trElement = document.createElement('tr');
   var thElement = document.createElement('th');
@@ -46,13 +45,6 @@ StoreName.prototype.render = function() {
 
   cookiesTable.appendChild(trElement);
 };
-
-
-new StoreName ('First and Pike', 65, 23, 6.3);
-new StoreName ('SeaTac', 24, 3, 3.7);
-new StoreName ('Seattle Center', 38, 11, 3.7);
-new StoreName ('Capitol Hill', 38, 20, 2.3);
-new StoreName('Alki', 16, 2, 4.6);
 
 function storeHoursHeader() {
   var trElement = document.createElement('tr');
@@ -133,9 +125,16 @@ function addNewStore(event) {
   renderAllStores();
   tableFooter();
 }
+//when using the constructor, you're creating a new "instance"
+new StoreName ('First and Pike', 65, 23, 6.3);
+new StoreName ('SeaTac', 24, 3, 3.7);
+new StoreName ('Seattle Center', 38, 11, 3.7);
+new StoreName ('Capitol Hill', 38, 20, 2.3);
+new StoreName('Alki', 16, 2, 4.6);
 
 //add event listener
 storeForm.addEventListener('submit', addNewStore);
+
 storeHoursHeader();
 renderAllSalesPerHour();
 renderAllStores();
