@@ -6,10 +6,11 @@ body{
   font-family: 'Rammetto One', cursive;
   width: 100%;
   background-color: #8AA29E;
-  color: #CE796B;
+  color: #3D5467;
   font-size: 55px;
   text-align: center;
-  padding:.5em;
+  background: linear-gradient(-90deg, #8AA29E, #ce796b);
+   border-radius: 20%
 }
 #salmonLogo1 {
   margin: auto;
@@ -20,14 +21,16 @@ body{
 #topBar {
   position: relative;
   margin: auto;
-  float: left;
+  display: block;
   width: 100%;
   background-color: #3D5467;
+  overflow: hidden;
 }
 .topBar{
+  display: block;
   position: relative;
-  height: 10em;
-  border: 10px solid black;
+  height: 8em;
+  border: 6px solid black;
   border-radius: 40px;
   background-color: #f1EDEE;
   color: #3D5467;
@@ -35,42 +38,88 @@ body{
   width: 31%;
   text-align: center;
   box-shadow: 1px 1px 1px 1px #444;
+  overflow:hidden;
+}
+.topBar:hover {
+  background-color: #ce796b;
+  color: white;
+  font-style: bold;
 }
 h2{
   font-family: 'IBM Plex Sans', sans-serif;
   margin-top: .01em;
   margin-bottom: .01em;
+  margin-right: .25em;
+  margin-left:.35em;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 .location{
-  float: left;
-  border: .25em solid #3d5467;
-  border-radius: 20%;
-  padding: .5em;
-  margin-left: 1em;
-  font-size: 80%;
-  font-weight: bold;
-  box-shadow: 1px 1px 1px 1px #444;
+    background-color: #3D5467;
+    display: block;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: .1em solid gray;
+    border-radius: 1% 40% 40% 1%;
+    box-shadow: 1px 1px 1px 1px #444;
+    margin-left: .24em;
+    font-size: 80%;
+    padding: 1em
 }
-.deck{
+.location:hover{
+  background-color: white;
+  color: black;
+}
+.deck {
   background-color: #ce796b;
   width: 100%;
-  height: 100em;
+  height: auto;
   box-shadow: 1px 1px 1px 1px #444;
   display:table-cell;
   padding: 1em; 
+}
+#ourStoryHeader{
+  display:block;
+  font-size:2em;
+  margin: 0;
+  font-family: 'Rammetto One', cursive;
+  color: #3D5467;
+  margin-left: 1em;
+}
+#merchandiseHeader {
+  
 }
 #ourStory{
   border: .25em solid #F1EDEE;
   float: left;
   width: 48%;
-  height: 100%;
+  height: auto;
+  box-shadow: 1px 1px 1px 1px #444;
 }
 #merchandise{
+  display: block;
+  overflow: hidden;
   border:.25em solid #F1EDEE;
   float: left;
   width: 48%;
   clear: bottom;
   height: 100%;
+  box-shadow: 1px 1px 1px 1px #444;
+}
+p{
+  margin-left: 1em;
+}
+#inLinePic{
+  display: block;
+  overflow: hidden;
+  width: 50%;
 }
 .bottomBar{
   

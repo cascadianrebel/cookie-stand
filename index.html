@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<!-- Besides using the picture of the fish... you should use...
-
-A custom Google font for highlights
-A specified standard san-serif web font for data (such as Arial, Verdana, or Helvetica)
-A specified standard serif web font for text (such as Georgia, Times, etc.)
-Specified different font colors for all three font usages
-A background color for the default page background (make sure font colors have good contrast and are readable on this background)
-A different background color for elements such boxes and tables (so make sure the font colors contrast against this well, too!)
-Anything else you'd like to add related to style. But remember: simplicity, clarity, and consistency are good things in design.
-Be thoughtful about layout and overall organization of the page.
-Include all of the typical stuff that you'll find on the home page of a business: locations, hours, contact information, some text about how awesome the business is, etc. Be creative, and again, think about what is meaningful to a typical end user. -->
-
+<!Doctype HTML>
 <html lang="en">
 <head>
   <!-- I dont know what this meta stuff is doing, I didn't add it-->
@@ -28,55 +16,66 @@ Include all of the typical stuff that you'll find on the home page of a business
   <img id='salmonLogo1' src="img/salmon.png" alt="Salmon Cookies logo">
 
   <Section id = 'topBar'>
-    <div class = "topBar">
+    <ul>
+    <li class = "topBar">
       <h2>Hours of Operations</h2>
       <p>Open daily from 6am - 8pm</p>
-    </div>
-    <div class = "topBar">
+    </li>
+    <li class = "topBar">
       <h2>Locations</h2>
-        <div class = "location">1st and Pike</div>
-        <div class = "location" >SeaTac Aiport</div>
-        <div class = "location" >Seatte Center</div>
-        <div class = "location" >Capitol Hill</div>
-        <div class = "location" >Alki </div>
-    </div>
-    <div class= "topBar">
+      <ul>
+        <li class = "location">1st and Pike</li>
+        <li class = "location" >SeaTac Aiport</li>
+        <li class = "location" >Seatte Center</li>
+        <li class = "location" >Capitol Hill</li>
+        <li class = "location" >Alki </li>
+        
+      </ul>
+    </li>
+    <li class= "topBar">
       <h2>Contact Us</h2>
-      <p>Administrative office located inside the Seattle Aquarium holding tank.<br> 
-      1483 Alaskan Way, Seattle, WA 98101</p>
-    </div>
+      <p> 401.867.5309<br> 
+      1483 Alaskan Way, Seattle, WA 98101
+      <br>
+        @SolmanSalmonSweets
+      </p>
+    </li>
+      </ul>
   </section>
 
   <section class = "deck">
     <div id = "ourStory">
-      <header>Our Story</header>
-      
+      <h2 id = "ourStoryHeader">Our Story</h2>
       <figure>
-          <img src="http://placehold.it/500x200" alt= "The Solman-Parr Family"/>
+          <img src="img/family.jpg" alt= "The Solman-Parr Family"/>
           <figcaption>from left: Tom Parr,34, Pat Solman-Parr,32, Fry Soloman-Parr,10, Roe Solman-Parr, 8 </figcaption>
       </figure>
 
-      <p>Lorem ipsum dolor sit amet, donec vitae suspendisse ut, hymenaeos tempus ut metus volutpat sem, ultricies integer vitae et. At id aenean eget lacinia risus at, penatibus vel, nonummy nunc viverra integer potenti mauris, morbi enim vivamus diam vitae ac nullam. Eget dapibus lacinia, varius sodales vehicula minim tellus ipsum, nec amet in elit. Cras lorem tellus nec morbi sapien et, donec lectus dolor in varius phasellus volutpat, amet nec saepe, vitae pulvinar elementum, donec penatibus ut eros. Elit felis, malesuada rutrum a penatibus eu maecenas tortor. In metus.
-        <img class= "inLinePic" src="http://placehold.it/500x200" alt="fish">
-        
 
-        A ipsum. Massa maecenas wisi nec ultrices, non ac, in et velit. Pede lorem. Neque pharetra massa. Vitae bibendum mauris mauris. Ipsum eu ligula mollis dolor est, mauris arcu a odio, ac sit erat felis amet, justo sed porttitor purus suspendisse senectus, pellentesque sapien nunc tortor. Integer hendrerit mi elit facilisis, enim purus velit nibh aliquet, ligula potenti lectus, arcu consectetuer ultrices. Dis vel etiam tortor felis amet ridiculus, turpis sodales. Turpis metus pellentesque sit, arcu ac pellentesque nam eget nulla sodales. Diam sagittis venenatis.
-        <img class= "inLinePic" src="http://placehold.it/500x200"  alt="A frosted Salmon cookie">
+      <p>When Pat Solman graduated from college, she set out to become the worlds best limnic endocrinologist. She had  dreams of finding a way to allow for her favorite animal, the Coho salmon, to live for years after spawning. She was close to restoring her favorite Coho's hormone levels  until one fateful October when her research camp was ransacked by a cascadian sasquatched, named Morris. Morris is a jerk.  
         
-        Hendrerit suscipit per ullamcorper hendrerit malesuada amet, molestie lacus, malesuada mi erat duis. Deleniti velit nullam id, volutpat ante nullam sociosqu, in in sed pellentesque dictumst at, cursus curabitur, fringilla nullam. Fermentum donec congue sem, felis in a nam risus, non a sed volutpat. Elit nec, pede inceptos et at porta nulla. Massa eros ullamcorper vitae gravida, metus amet donec in sapiente ultrices, proin nec pede vestibulum quisque mattis enim. Vulputate metus arcu dis, mauris massa nec lorem ante tempor. In blandit in eleifend, ac at luctus sed odio turpis at, pede vulputate elit, eleifend ultricies lacinia nam integer, duis vehicula fusce vel ligula ut. Feugiat morbi, neque ultrices donec quis id, dapibus ut mi, euismod per lacus sed elementum. Elit ante nulla neque pulvinar velit augue, purus proin quam at sollicitudin, mauris torquent risus, aliquam gravida nostra tortor id id, mollis suspendisse. Nulla amet duis semper mi sodales netus, risus potenti provident.<img class= "inLinePic" src="http://placehold.it/500x200" alt="a salmon cookie cutter"></p>
+        <img class= "inLinePic" src="img/frosted-cookie.jpg"  alt="A frosted Salmon cookie">
+        
+       Morris destroyed all of Pat's research. Her beakers were shattered, her salmon specimen were ripped appart, and even her food supply was targetted.  When Pat submitted her report to National Park Service, the junior forester, Tom Parr, took a special interest. He couldn't recover any of her research but he was able to recover some bits and peices of her Salmon specimen and food supply. <img class= "inLinePic" src="cutter.jpg" alt="a salmon cookie cutter">
+        Sarcastically, Pat replied "What am I going to do with this? Bake cookies?" She was so driven by her sarcasm that she actually ended up making cookies. Tom loved them and shared the sarcasticookies with the other foresters. 
+        Pat's Salmon Cookies were loved by the mountain men and women and were requested over an over until Pat gave up on her dream of being the world's best limnin endocrinologist in favor of opening up her first cookie store.
+        Pat and Tom were married less than a year later and the cookies warranted 4 additional Salmon cookie stores. They now employ their children as free labor. 
+      </p>
     </div>
     <div id= "merchandise">
-        <header>Merchandise</header>
+        <h2 id= merchandiseHeader>
+          Merchandise</h2>
         <figure>
-            <img src="http://placehold.it/500x200" alt="Pat's Salmon Cookie shirt"/>
+            <img src="img/shirt.jpg" alt="Pat's Salmon Cookie shirt"/>
             <figcaption>scratch'n sniff salmon shirt $19.95 +s&h</figcaption>
         </figure>
+             <figure> <img class= "inLinePic" src="img/fish.jpg" alt="fish"><figcaption>double-sided, razor-sharp souvenir cookie cutter $55.55</figcaption></figure>
     </div>
   </section>
   <section class = "bottomBar">
     <header>Join the team</header>
     <figure>
-      <img src="http://placehold.it/500x200" alt="a Chinook Salmon">
+      <img src="img/chinook.jpg" alt="a Chinook Salmon">
     </figure>
   </section>
 </body>
