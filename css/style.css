@@ -1,86 +1,77 @@
-
-/* header {
+body{
+  background-color: #3D5467;
+  padding: 1.5em;
+}
+ header {
   font-family: 'Rammetto One', cursive;
   width: 100%;
-  background-color: bisque;
+  background-color: #8AA29E;
+  color: #CE796B;
   font-size: 55px;
   text-align: center;
+  padding:.5em;
 }
-#salmonLogo {
-  margin-left: 15%;
-  border: 3px dotted white;
-  width: 70%;
-  background-color: salmon;
+#salmonLogo1 {
+  margin: auto;
+  border: 3px dotted #3D5467;
+  width: 99.5%;
+  background-color: #8AA29E;
 }
-#hours {
-  margin-left: 13%;
-}
-div {
-  text-align: center;
-  line-height: 35px;
-  font-size: 25;
+#topBar {
+  position: relative;
+  margin: auto;
   float: left;
-  padding:10px;
-  border: 3px solid black;
-  background-color: bisque;
-  width: 35%;
-  max-height: 30px;
-
+  width: 100%;
+  background-color: #3D5467;
 }
-section {
-  background-color: Rgba(69,74,92,0.9);
-  border: 3px solid hsla(199, 29%, 77%, 0.37);
-  border-radius: 25px;
-  color: white;
-  text-align: left;
-  padding: 7px;
-  margin-top: 20%;
-} */
-
-
-/* Non-consumer facing page */
-#charts{
-  background-color: gray;
+.topBar{
+  position: relative;
+  height: 10em;
+  border: 10px solid black;
+  border-radius: 40px;
+  background-color: #f1EDEE;
+  color: #3D5467;
+  float: left;
+  width: 31%;
+  text-align: center;
+  box-shadow: 1px 1px 1px 1px #444;
 }
-
-#tableH{
-    background-color: white;
-    text-align: center;
-    width: 500px;
-    border: 2px solid black;
-    margin-left: 20%;
+h2{
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin-top: .01em;
+  margin-bottom: .01em;
 }
-
-ul {
-  list-style: none;
+.location{
+  float: left;
+  border: .25em solid #3d5467;
+  border-radius: 20%;
+  padding: .5em;
+  margin-left: 1em;
+  font-size: 80%;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px 1px #444;
 }
-form {
- border: none;
- float: left;
- text-align: right;
- background-color: white;
+.deck{
+  background-color: #ce796b;
+  width: 100%;
+  height: 100em;
+  box-shadow: 1px 1px 1px 1px #444;
+  display:table-cell;
+  padding: 1em; 
 }
-table {
-  background: #fff;
-  border-spacing: 0;
+#ourStory{
+  border: .25em solid #F1EDEE;
+  float: left;
+  width: 48%;
+  height: 100%;
+}
+#merchandise{
+  border:.25em solid #F1EDEE;
+  float: left;
+  width: 48%;
+  clear: bottom;
+  height: 100%;
+}
+.bottomBar{
   
 }
-table tr:first-child {
-  background: salmon;
-}
-table tr:nth-child(even) {
-  background: #ddd;
-}
-table tr:last-child {
-  background: salmon;
-}
-table td {
-  padding:  .5em;
-  border-bottom: 1px solid black;
-  border-right: .1em solid black;
-}
-th {
-  border: 2px solid black;
-}
-
-

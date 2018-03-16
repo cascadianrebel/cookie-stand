@@ -13,34 +13,71 @@ Include all of the typical stuff that you'll find on the home page of a business
 
 <html lang="en">
 <head>
+  <!-- I dont know what this meta stuff is doing, I didn't add it-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Salmon Cookies</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Rammetto+One" rel="stylesheet">
 </head>
 <body>
-  <header>Salmon Cookies</header>
-  <img id='salmonLogo' src="img/salmon.png" alt="Salmon Cookies logo">
-  <div id='hours'>
-    <h2>Hours of Operations</h2>
-    <p>Open daily from 6am - 8pm</p>
-  </div>
-  <div>
-    <h2>Locations</h2>
-    <ul>
-      <li>1st and Pike</li>
-      <li>SeaTac Aiport</li>
-      <li>Seatte Center</li>
-      <li>Capitol Hill</li>
-      <li>Alki </li>
-    </ul>
-  </div>
-  <section>
-    <h2>About Us</h2>
-    <p>We make cookies out of fish.</p>
+
+  <header>Pat's Salmon Cookies</header>
+  <img id='salmonLogo1' src="img/salmon.png" alt="Salmon Cookies logo">
+
+  <Section id = 'topBar'>
+    <div class = "topBar">
+      <h2>Hours of Operations</h2>
+      <p>Open daily from 6am - 8pm</p>
+    </div>
+    <div class = "topBar">
+      <h2>Locations</h2>
+        <div class = "location">1st and Pike</div>
+        <div class = "location" >SeaTac Aiport</div>
+        <div class = "location" >Seatte Center</div>
+        <div class = "location" >Capitol Hill</div>
+        <div class = "location" >Alki </div>
+    </div>
+    <div class= "topBar">
+      <h2>Contact Us</h2>
+      <p>Administrative office located inside the Seattle Aquarium holding tank.<br> 
+      1483 Alaskan Way, Seattle, WA 98101</p>
+    </div>
+  </section>
+
+  <section class = "deck">
+    <div id = "ourStory">
+      <header>Our Story</header>
+      
+      <figure>
+          <img src="http://placehold.it/500x200" alt= "The Solman-Parr Family"/>
+          <figcaption>from left: Tom Parr,34, Pat Solman-Parr,32, Fry Soloman-Parr,10, Roe Solman-Parr, 8 </figcaption>
+      </figure>
+
+      <p>Lorem ipsum dolor sit amet, donec vitae suspendisse ut, hymenaeos tempus ut metus volutpat sem, ultricies integer vitae et. At id aenean eget lacinia risus at, penatibus vel, nonummy nunc viverra integer potenti mauris, morbi enim vivamus diam vitae ac nullam. Eget dapibus lacinia, varius sodales vehicula minim tellus ipsum, nec amet in elit. Cras lorem tellus nec morbi sapien et, donec lectus dolor in varius phasellus volutpat, amet nec saepe, vitae pulvinar elementum, donec penatibus ut eros. Elit felis, malesuada rutrum a penatibus eu maecenas tortor. In metus.
+        <img class= "inLinePic" src="http://placehold.it/500x200" alt="fish">
+        
+
+        A ipsum. Massa maecenas wisi nec ultrices, non ac, in et velit. Pede lorem. Neque pharetra massa. Vitae bibendum mauris mauris. Ipsum eu ligula mollis dolor est, mauris arcu a odio, ac sit erat felis amet, justo sed porttitor purus suspendisse senectus, pellentesque sapien nunc tortor. Integer hendrerit mi elit facilisis, enim purus velit nibh aliquet, ligula potenti lectus, arcu consectetuer ultrices. Dis vel etiam tortor felis amet ridiculus, turpis sodales. Turpis metus pellentesque sit, arcu ac pellentesque nam eget nulla sodales. Diam sagittis venenatis.
+        <img class= "inLinePic" src="http://placehold.it/500x200"  alt="A frosted Salmon cookie">
+        
+        Hendrerit suscipit per ullamcorper hendrerit malesuada amet, molestie lacus, malesuada mi erat duis. Deleniti velit nullam id, volutpat ante nullam sociosqu, in in sed pellentesque dictumst at, cursus curabitur, fringilla nullam. Fermentum donec congue sem, felis in a nam risus, non a sed volutpat. Elit nec, pede inceptos et at porta nulla. Massa eros ullamcorper vitae gravida, metus amet donec in sapiente ultrices, proin nec pede vestibulum quisque mattis enim. Vulputate metus arcu dis, mauris massa nec lorem ante tempor. In blandit in eleifend, ac at luctus sed odio turpis at, pede vulputate elit, eleifend ultricies lacinia nam integer, duis vehicula fusce vel ligula ut. Feugiat morbi, neque ultrices donec quis id, dapibus ut mi, euismod per lacus sed elementum. Elit ante nulla neque pulvinar velit augue, purus proin quam at sollicitudin, mauris torquent risus, aliquam gravida nostra tortor id id, mollis suspendisse. Nulla amet duis semper mi sodales netus, risus potenti provident.<img class= "inLinePic" src="http://placehold.it/500x200" alt="a salmon cookie cutter"></p>
+    </div>
+    <div id= "merchandise">
+        <header>Merchandise</header>
+        <figure>
+            <img src="http://placehold.it/500x200" alt="Pat's Salmon Cookie shirt"/>
+            <figcaption>scratch'n sniff salmon shirt $19.95 +s&h</figcaption>
+        </figure>
+    </div>
+  </section>
+  <section class = "bottomBar">
+    <header>Join the team</header>
+    <figure>
+      <img src="http://placehold.it/500x200" alt="a Chinook Salmon">
+    </figure>
   </section>
 </body>
 </html>
