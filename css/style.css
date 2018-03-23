@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body{
   background-color: #3D5467;
   padding: 1.5em;
@@ -5,12 +8,12 @@ body{
  header {
   font-family: 'Rammetto One', cursive;
   width: 100%;
-  background-color: #8AA29E;
+  background-color: #ce796b;
   color: #3D5467;
   font-size: 55px;
   text-align: center;
-  background: linear-gradient(-90deg, #8AA29E, #ce796b);
-   border-radius: 20%
+  border-radius: 20px;
+  padding: 2%;
 }
 #salmonLogo1 {
   margin: auto;
@@ -25,17 +28,18 @@ body{
   width: 100%;
   background-color: #3D5467;
   overflow: hidden;
+  text-align:center;
 }
 .topBar{
   display: block;
   position: relative;
   height: 8em;
   border: 6px solid black;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: #f1EDEE;
   color: #3D5467;
   float: left;
-  width: 31%;
+  width: 33%;
   text-align: center;
   box-shadow: 1px 1px 1px 1px #444;
   overflow:hidden;
@@ -44,83 +48,110 @@ body{
   background-color: #ce796b;
   color: white;
   font-style: bold;
+  cursor: pointer;
+}
+ul h2 {
+  font-size:1.2em;
+  font-style: oblique;
+  font-weight: bolder
 }
 h2{
   font-family: 'IBM Plex Sans', sans-serif;
-  margin-top: .01em;
-  margin-bottom: .01em;
-  margin-right: .25em;
-  margin-left:.35em;
 }
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-.location{
-    background-color: #3D5467;
-    display: block;
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border: .1em solid gray;
-    border-radius: 1% 40% 40% 1%;
-    box-shadow: 1px 1px 1px 1px #444;
-    margin-left: .24em;
-    font-size: 80%;
-    padding: 1em
-}
+
 .location:hover{
   background-color: white;
   color: black;
 }
+li h2{
+margin-bottom: 7px;
+}
 .deck {
   background-color: #ce796b;
   width: 100%;
-  height: auto;
   box-shadow: 1px 1px 1px 1px #444;
-  display:table-cell;
   padding: 1em; 
+  overflow:hidden;
+  border-radius: 25px;
+  text-align:center;
 }
 #ourStoryHeader{
   display:block;
+  font-size:2em;
+  margin: 1em;
+  font-family: 'Rammetto One', cursive;
+  color: #3D5467;
+  margin-left: 1em;
+  text-align:left;
+}
+#merchandiseHeader {
+    display:block;
   font-size:2em;
   margin: 0;
   font-family: 'Rammetto One', cursive;
   color: #3D5467;
   margin-left: 1em;
-}
-#merchandiseHeader {
-  
+  margin-top: .5em;
 }
 #ourStory{
   border: .25em solid #F1EDEE;
   float: left;
-  width: 48%;
+  width: 100%;
   height: auto;
   box-shadow: 1px 1px 1px 1px #444;
+  overflow: hidden;
+  text-align:center;
+  border-radius: 25px;
+  margin-bottom: 1em;
 }
 #merchandise{
   display: block;
   overflow: hidden;
   border:.25em solid #F1EDEE;
-  float: left;
-  width: 48%;
+  width: 100%;
   clear: bottom;
-  height: 100%;
   box-shadow: 1px 1px 1px 1px #444;
+  text-align:center;
+  border-radius: 25px;
+}
+figure{
+  display:inline-block;
+  margin: 3px
+}
+
+figcaption{
+  color:white;
+  text-align:center;
 }
 p{
-  margin-left: 1em;
+  display:inline-block;
+  color: #3D5467;
+  padding: 2%;
+  font-weight:bold;
+  overflow-wrap:normal
 }
-#inLinePic{
-  display: block;
-  overflow: hidden;
-  width: 50%;
+.inLinePic{
+  float:right;
+  margin: .5em;
+}
+#merchandise .inLinePic{
+  display:inline;
+  padding: 3px;
+  margin-right: 50px
 }
 .bottomBar{
+  text-align:center;
+  margin: 2em;
+}
+.bottomBar:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+img{
+  width:auto;
+  border: 3px solid white
+}
+.bottomBar img{
+  border-radius: 130px 130px 130px 130px;
   
 }
